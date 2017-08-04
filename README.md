@@ -17,7 +17,7 @@ Wrapper bundle that makes accessing Mailchimp functions easily in object oriente
 
 HypeMailChimp bundle released under MIT LICENSE 
 
-#Supported API Methods
+## Supported API Methods
 
 **Campaigns related**
 
@@ -63,8 +63,6 @@ HypeMailChimp bundle released under MIT LICENSE
 1. `templates/del`
 1. `templates/info`
 1. `templates/undel`
-
-
 
 **Export API**
 
@@ -137,9 +135,9 @@ hype_mailchimp:
 ?>
 ```
 
-##Examples
+## Examples
 
-###Create new campaign
+### Create new campaign
 ``` php
 <?php 
     $mc = $this->get('hype_mailchimp');
@@ -159,7 +157,7 @@ hype_mailchimp:
         var_dump($data);
 ?>
 ```
-###Delete existing campaign
+### Delete existing campaign
 ``` php
 <?php 
      $mc = $this->get('hype_mailchimp');
@@ -171,7 +169,7 @@ hype_mailchimp:
 ?>
 ```
 
-###Send campaign
+### Send campaign
 ``` php
 <?php 
      $mc = $this->get('hype_mailchimp');
@@ -183,7 +181,7 @@ hype_mailchimp:
 ?>
 ```
 
-###Subscribe new user to list
+### Subscribe new user to list
 ``` php
 <?php 
      $mc = $this->get('hype_mailchimp');
@@ -192,8 +190,8 @@ hype_mailchimp:
         var_dump($data);
 ?>
 ```
-**Note** that the user will be subscriber to the default list set in `config.yml` 
-if you want to change the list for this time only, you can use 
+**Note** that the user will be subscribed to the default list set in `config.yml`. 
+If you want to change the list for this time only, you can use 
 ``` php
 <?php 
      $mc = $this->get('hype_mailchimp');
